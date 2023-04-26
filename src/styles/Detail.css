@@ -1,0 +1,56 @@
+.artistDetail {
+    display: flex;
+    flex-direction: column;
+}
+
+.headerInfo {
+    min-height: calc(100vh / 3.5);
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+
+.headerImage {
+    position: absolute;
+    width: 100%;
+    object-position: center;
+    max-height: calc(100vh / 3);
+    object-fit: cover;
+    opacity: 0.8;
+    z-index: -1;
+}
+
+.artistDetail h1 {
+    font-size: 60px;
+}
+
+.followers {
+    color: white;
+    font-size: 18px;
+    margin-top: 5px;
+}
+
+
+
+.backButton {
+    margin-top: 20px;
+    position: absolute;
+    left: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 3.125rem;
+    height: 3.125rem;
+    background-color: #1d1d1d;
+    border-radius: 50%;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.backButton:hover {
+    background-color: #474747;
+}
+
+.backButton img {
+    height: 50px;
+}

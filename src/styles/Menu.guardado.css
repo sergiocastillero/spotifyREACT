@@ -1,0 +1,85 @@
+/* Estilo para el tamaño de la fuente del documento */
+html {
+    font-size: 16px;
+  }
+  
+  body {
+    padding-bottom: 30px;
+  }
+  
+  h2 {
+    box-sizing: border-box;
+    -webkit-tap-highlight-color: transparent;
+    margin-block: 0px;
+    margin-left: 10px;
+    font-size: 1.5rem;
+    font-weight: 700;
+    font-family: var(--font-family, CircularSpTitle, CircularSpTitle-Tall, CircularSp-Arab, CircularSp-Hebr, CircularSp-Cyrl, CircularSp-Grek, CircularSp-Deva, var(--fallback-fonts, sans-serif));
+    color: white;
+    margin-top: 30px;
+    margin-bottom: 10px;
+  }
+  
+  h1 {
+    font-size: 3rem;
+    font-weight: 700;
+    font-family: var(--font-family, CircularSpTitle, CircularSpTitle-Tall, CircularSp-Arab, CircularSp-Hebr, CircularSp-Cyrl, CircularSp-Grek, CircularSp-Deva, var(--fallback-fonts, sans-serif));
+    color: white;
+    margin-bottom: unset;
+  }
+  
+  ul {
+    list-style: none;
+    padding: 0px;
+    margin: 0px;
+    display: flex;
+    align-items: center;
+  }
+  
+  ul li {
+    margin-right: 55px;
+  }
+  
+  ul li a {
+    color: var(--white);
+    font-size: 16px;
+    font-weight: 700;
+    text-decoration: none;
+  }
+  
+  ul li a:hover {
+    text-decoration: underline;
+  }
+  
+  .logo {
+    height: 48px;
+  }
+  
+  .navigationContainer {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 80px;
+    align-items: center;
+  }
+  
+  .spoty-button {
+    margin: 10px;
+    padding: 10px;
+    border: none;
+    border-radius: 30px;
+    background-color: var(--green);
+    color: var(--white);
+    cursor: pointer;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 700;
+  }
+  
+  .spoty-button:hover {
+    background-color: #1aae5a;
+  }
+  
+  .menu {
+    display: flex;
+    align-items: center;
+  }

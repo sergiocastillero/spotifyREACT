@@ -1,0 +1,157 @@
+/* Estilo para el tamaño de la fuente del documento */
+html {
+  font-size: 16px;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 80px;
+  position: relative;
+}
+
+#root {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+nav {
+  background-color: var(--black);
+  color: var(--white);
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  width: 250px;
+  position: fixed;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  overflow-y: auto;
+}
+
+.content {
+  background-color: transparent;
+    color: var(--white);
+    display: flex;
+    flex-direction: column;
+    height: 90%;
+    width: calc(100% - 250px);
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    overflow-y: auto;
+}
+
+.navigationContainer {
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+}
+
+.navigationContainer.active {
+  transform: translateX(0%);
+}
+
+.menu {
+  padding: 0px 20px 0px 20px;
+  height: 100%;
+}
+
+.menu svg {
+  height: 24px; 
+  margin-right: 15px;
+}
+
+.logo svg{
+  height: 40px;
+}
+
+ul {
+  list-style: none;
+  padding: 0px;
+  margin: 0px;
+}
+
+.navigationContainer li {
+  margin-top: 20px;
+  display: flex;
+  align-items: center;
+}
+
+.navigationContainer a {
+  color: var(--white);
+  font-size: 16px;
+  font-weight: 700;
+  text-decoration: none;
+  margin-left: 10px;
+}
+
+.navigationContainer a:hover {
+  text-decoration: underline;
+}
+
+.spoty-button {
+  padding: 10px;
+  border-radius: 30px;
+  background-color: var(--green);
+  color: var(--white);
+  cursor: pointer;
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: 700;
+}
+
+.spoty-button:hover {
+  background-color: #1aae5a;
+}
+
+.login-container {
+  position: absolute;
+  top: 30px;
+  right: 80px;
+}
+
+@media screen and (max-width: 768px) {
+  nav {
+    /* display: none; */
+    height: unset;
+    width: 100%;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    top: unset;
+  }
+
+  .content {
+      height: 90%;
+      width: 100%;
+      position: fixed;
+      overflow-y: auto;
+      margin-bottom: 84px;
+  }
+
+  .navigationContainer li {
+    margin: 30px;
+  }
+  
+  .navigationContainer {
+    padding: unset;
+  }
+
+  .spotifyLogo {
+    display: none;
+  }
+
+  .menu {
+    display: flex;
+    justify-content: center;
+  }
+}
+
+@media screen and (max-width: 555px) {
+  nav li span {
+    display: none;
+  }
+}

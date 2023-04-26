@@ -1,0 +1,44 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
+
+
+:root{
+  --green: #1db954;
+  --black: #191414;
+  --white: #ffffff;
+}
+
+
+body {
+  background-color: black;
+  font-family: 'Roboto', sans-serif;
+  padding-bottom: 30px;
+  margin: 0;
+}
+
+
+.tasca {
+  border: 2px solid black;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 5px 10px;
+}
+
+
+.tascaCompletada span {
+  text-decoration: line-through;
+  color: red;
+}
+
+.tasca button {
+  background-color: transparent;
+  border: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0px;
+}
+
+.tasca button svg:hover{
+  color: red;
+}
